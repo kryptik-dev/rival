@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+/var/log/
+
+# Build outputs
+frontend/build/
+backend/build/
+dist/
+
+# Environment variables (keep structure but not actual values)
+# .env files are included in repo with placeholder values
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Supervisor logs
+*.out.log
+*.err.log
