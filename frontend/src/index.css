@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A52BE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom font loading */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background gradient */
+.gradient-bg {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+}
+
+/* Particle effect background */
+.particles-bg {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(42, 82, 190, 0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+  animation: float 20s ease-in-out infinite;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(42, 82, 190, 0.2);
+}
+
+/* Glow effect */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(42, 82, 190, 0.3);
+}
+
+/* Hover animations */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Price card styles */
+.price-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+.price-card:hover {
+  border-color: #2A52BE;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(42, 82, 190, 0.2);
+}
+
+.price-card.popular {
+  border-color: #2A52BE;
+  background: linear-gradient(135deg, rgba(42, 82, 190, 0.1) 0%, rgba(30, 30, 30, 0.9) 100%);
+}
+
+/* Icon animations */
+.icon-float {
+  animation: float 3s ease-in-out infinite;
+}

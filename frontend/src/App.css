@@ -1,0 +1,147 @@
+/* Component-specific styles */
+
+/* Hero section styling */
+.hero-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 0%, #2A52BE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  color: #a3a3a3;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Feature cards */
+.feature-card {
+  background: rgba(45, 45, 45, 0.6);
+  border: 1px solid rgba(64, 64, 64, 0.5);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+  border-color: #2A52BE;
+  background: rgba(42, 82, 190, 0.1);
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #2A52BE 0%, #1e40af 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Pricing section */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2A52BE;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #2A52BE 0%, #1e40af 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Discord section */
+.discord-section {
+  background: linear-gradient(135deg, rgba(42, 82, 190, 0.1) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(42, 82, 190, 0.3);
+}
+
+/* Footer */
+.footer-section {
+  border-top: 1px solid rgba(64, 64, 64, 0.5);
+  background: rgba(30, 30, 30, 0.9);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #2A52BE 0%, #1e40af 100%);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(42, 82, 190, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #2A52BE;
+  padding: 0.75rem 2rem;
+  border: 2px solid #2A52BE;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #2A52BE;
+  color: white;
+  transform: translateY(-2px);
+}
